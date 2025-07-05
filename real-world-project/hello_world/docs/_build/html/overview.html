@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Project Overview &#8212; hello_world  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API Reference" href="api.html" />
+    <link rel="prev" title="hello_world documentation" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="project-overview">
+<h1>Project Overview<a class="headerlink" href="#project-overview" title="Link to this heading">¶</a></h1>
+<section id="description">
+<h2>1.5.1 Description<a class="headerlink" href="#description" title="Link to this heading">¶</a></h2>
+<p>The problem this project addresses is how to effectively onboard new developers. A strong onboarding project helps new team members become productive quickly and introduces experienced developers to shared tools and processes.</p>
+<p>This project guides team members through:</p>
+<ul class="simple">
+<li><p>Installing a core set of development tools.</p></li>
+<li><p>Creating a working Python module.</p></li>
+<li><p>Displaying the completed work as part of a sprint demo.</p></li>
+</ul>
+<p>Each developer will build a simple application with a command-line interface (CLI) that prints a cheerful greeting. For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>%<span class="w"> </span>python<span class="w"> </span>src/hello_world.py<span class="w"> </span>--who<span class="w"> </span><span class="s2">&quot;World&quot;</span>
+Hello,<span class="w"> </span>World!
+</pre></div>
+</div>
+<p>This shows how running the application with the <cite>–who</cite> parameter outputs a greeting to the console.</p>
+</section>
+<section id="approach">
+<h2>1.5.2 Approach<a class="headerlink" href="#approach" title="Link to this heading">¶</a></h2>
+<p>The goal is to build a small Python application module. The module will include internal functions or possibly a class. It will consist of the following components:</p>
+<ul class="simple">
+<li><p>A function to <strong>parse command-line options</strong>, using the <cite>argparse</cite> module.</p></li>
+<li><p>A function to <strong>print a cheerful greeting</strong>.</p></li>
+<li><p>A <cite>main()</cite> function to coordinate the above steps.</p></li>
+<li><p>An <cite>if __name__ == “__main__”:</cite> guard to allow for unit testing and script execution.</p></li>
+</ul>
+<p>Though simple in function, this project introduces engineering complexity suitable for testing multiple units and supports best practices in Python project structure.</p>
+</section>
+<section id="deliverables">
+<h2>1.5.3 Deliverables<a class="headerlink" href="#deliverables" title="Link to this heading">¶</a></h2>
+<p>The following files and structure are expected as part of the project:</p>
+<ul class="simple">
+<li><p><cite>README.md</cite>: A summary of the project and its purpose.</p></li>
+<li><p><cite>pyproject.toml</cite>: Defines the project configuration and dependencies.</p></li>
+<li><p><cite>docs/</cite>: Contains the Sphinx-generated documentation:</p>
+<ul>
+<li><p><cite>overview.rst</cite>: This file.</p></li>
+<li><p><cite>api.rst</cite>: API reference for the code.</p></li>
+</ul>
+</li>
+<li><p><cite>src/hello_world.py</cite>: The main application module.</p></li>
+<li><p><cite>tests/test_hw.py</cite>: Unit tests for the module.</p></li>
+<li><p><cite>features/hello_world.feature</cite>: Gherkin-based acceptance test scenarios.</p></li>
+<li><p><cite>steps/hw_cli.py</cite>: Step definitions for the feature tests.</p></li>
+<li><p><cite>environment.py</cite>: Optional setup/teardown hooks for behave.</p></li>
+<li><p><cite>tox.ini</cite>: Test automation using <cite>tox</cite>.</p></li>
+</ul>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">hello_world</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Project Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">1.5.1 Description</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approach">1.5.2 Approach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deliverables">1.5.3 Deliverables</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">hello_world documentation</a></li>
+      <li>Next: <a href="api.html" title="next chapter">API Reference</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2025, lethanhtrung7412.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.2.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/overview.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
