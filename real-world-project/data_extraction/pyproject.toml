@@ -1,0 +1,36 @@
+# Python Real-World Project
+# Project 1: Data Extraction
+
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "data_extraction"
+version = "1.0.0"
+authors = [
+    {name = "lethanhtrung7412", email = "lethanhtrung7412@email.com"},
+]
+description = "Real-World Python Projects -- Project 1: Data Extraction"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+]
+dependencies = [
+    # Packages this project requires
+]
+[project.optional-dependencies]
+dev = [
+    # Development tools to work on this project
+    "sphinx==7.2.2",
+    "sphinxcontrib-plantuml==0.25",
+    "pip-tools==7.3.0"
+]
+test = [
+    # Testing tools to test this project
+    "pytest==7.4.0",
+    "tox==4.9.0",
+    "behave==1.2.6"
+]
